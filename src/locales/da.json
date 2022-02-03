@@ -1,0 +1,21 @@
+{
+  "common": {
+    "email": "E-mail",
+    "password": "Adgangskode"
+  },
+  "navigation": {
+    "articles": "Nyheder",
+    "admins": "Admins",
+    "mediaLibrary": "Media Library",
+    "teams": "Teams"
+  },
+  "user": {
+    "login": "Log ind",
+    "logout": "Log ud",
+    "changePassword": "Skift password",
+    "roles": {
+      "ADMIN": "Admin",
+      "APP": "App"
+    }
+  }
+}

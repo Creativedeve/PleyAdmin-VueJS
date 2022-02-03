@@ -1,0 +1,20 @@
+mutation createTeamAchievement(
+    $teamId: ID!,
+    $rank: Int!,
+    $title: String!
+    $achievedAt: Timestamp!
+  ) {
+  createTeamAchievement(input: { 
+    teamId: $teamId,
+    rank: $rank,
+    title: $title,
+    achievedAt: $achievedAt
+  }) {
+    teamAchievement {
+      id
+      title
+      rank
+      achievedAt
+    }
+  }
+}

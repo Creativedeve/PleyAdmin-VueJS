@@ -1,0 +1,41 @@
+@h1: 10px;
+@h2: 2 * @h1;
+@h3: 3 * @h1;
+@h4: 4 * @h1;
+@h5: 5 * @h1;
+@h6: 6 * @h1;
+@h7: 7 * @h1;
+@h8: 8 * @h1;
+@hh: 0.5 * @h1;
+
+@menuWidth: 200px;
+@panelWidth: 320px;
+@panelWideWidth: 1.5 * @panelWidth;
+@panelXWideWidth: 3 * @panelWidth;
+
+@colBlack: #222;
+@colWhite: #fff;
+@colBad: #f36;
+@colGreyDark: #555;
+@colGreyLight: #eee;
+@colGreyLightest: #f4f5f8;
+@colGood: #41b883;
+@colOrange: #e38c34;
+
+@menuWidth: 240px;
+
+@smallonly: ~"only screen and (max-width: 720px)";
+@notsmall: ~"only screen and (min-width: 720px)";
+@medium: ~"only screen and (min-width: 720px)";
+@large: ~"only screen and (min-width: 1200px)";
+
+.smallShadow() {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scrollable() {
+  -webkit-overflow-scrolling: touch;
+  // scroll-behavior: smooth;
+  overflow-y: auto;
+  overflow-x: hidden;
+}

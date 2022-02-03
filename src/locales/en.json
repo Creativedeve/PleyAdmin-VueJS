@@ -1,0 +1,21 @@
+{
+  "common": {
+    "email": "E-mail",
+    "password": "Password"
+  },
+  "navigation": {
+    "articles": "News",
+    "admins": "Admins",
+    "mediaLibrary": "Media Library",
+    "teams": "Teams"
+  },
+  "user": {
+    "login": "Sign in",
+    "logout": "Sign out",
+    "changePassword": "Change password",
+    "roles": {
+      "ADMIN": "Admin",
+      "APP": "App"
+    }
+  }
+}

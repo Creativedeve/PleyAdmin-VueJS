@@ -1,0 +1,37 @@
+mutation updateTeam(
+    $id: ID!,
+    $localeDescription: LocaleStringInput
+    $logo: ImageInput
+  ) {
+  updateTeam(input: { 
+    id: $id, 
+    localeDescription: $localeDescription
+    logo: $logo
+  }) {
+    team {
+      id
+      name
+      description
+      achievements {
+        rank
+        achievedAt
+        title
+      }
+      logo {
+        source
+        publicId
+        originalHeight
+        originalWidth
+        format
+        caption
+        alt
+      }
+      players {
+        id
+        name
+        firstName
+        lastName
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+mutation updateAdmin($roleIds: [ID], $id: ID!, $twitterHandle: String) {
+  updateUser(input: { 
+    id: $id, 
+    roleIds: $roleIds
+    twitterHandle: $twitterHandle
+  }) {
+    user {
+      id
+      firstName
+      lastName
+      email
+      roleIds
+      twitterHandle
+    }
+  }
+}

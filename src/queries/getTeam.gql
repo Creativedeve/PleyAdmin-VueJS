@@ -1,0 +1,23 @@
+query getTeam($id: ID!) {
+  getTeam(input: { id: $id }) {
+    id
+    name
+    slug
+    description
+    achievements {
+      id
+      rank
+      achievedAt
+      title
+    }
+    logo {
+      source
+      publicId
+      originalHeight
+      originalWidth
+      format
+      caption
+      alt
+    }
+  }
+}

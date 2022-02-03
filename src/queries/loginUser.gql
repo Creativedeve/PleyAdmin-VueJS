@@ -1,0 +1,13 @@
+mutation loginUser($email: EmailAddress!, $password: Password!) {
+  loginUser(input: { email: $email, password: $password }) {
+    message
+    token
+    user {
+      firstName
+      lastName
+      id
+      type
+      roleIds
+    }
+  }
+}

@@ -1,0 +1,30 @@
+query getArticle($id: ID!) {
+  getArticle(input: { id: $id }) {
+    id
+    title
+    teaser
+    body
+    priority
+    status
+    publishedAt
+    slug
+    previewToken
+    playerMentions {
+      id
+      name
+    }
+    teamMentions {
+      id
+      name
+    }
+    image {
+      source
+      publicId
+      originalHeight
+      originalWidth
+      format
+      caption
+      alt
+    }
+  }
+}

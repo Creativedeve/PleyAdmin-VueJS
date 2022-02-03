@@ -1,0 +1,5 @@
+mutation deleteTeamAchievement($id: ID!, $teamId: ID!) {
+  deleteTeamAchievement(input: { id: $id, teamId: $teamId }) {
+    success
+  }
+}

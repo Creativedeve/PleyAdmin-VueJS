@@ -1,0 +1,5 @@
+mutation deleteAdmin($id: ID!) {
+  deleteUser(input: { id: $id }) {
+    success
+  }
+}

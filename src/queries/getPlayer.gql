@@ -1,0 +1,7 @@
+query getPlayer($id: ID!) {
+  getPlayer(input: { id: $id }) {
+    id
+    name
+    slug
+  }
+}

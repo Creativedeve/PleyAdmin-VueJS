@@ -1,0 +1,12 @@
+query getAdmins {
+  getAdmins(input: {}) {
+    admins {
+      id
+      firstName
+      lastName
+      email
+      roleIds 
+      status
+    }
+  }
+}

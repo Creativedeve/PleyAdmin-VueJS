@@ -1,0 +1,22 @@
+mutation updateTeamAchievement(
+    $id: ID!,
+    $teamId: ID!,
+    $rank: Int!,
+    $title: String!
+    $achievedAt: Timestamp!
+  ) {
+  updateTeamAchievement(input: { 
+    id: $id, 
+    teamId: $teamId,
+    rank: $rank,
+    title: $title,
+    achievedAt: $achievedAt
+  }) {
+    teamAchievement {
+      id
+      title
+      rank
+      achievedAt
+    }
+  }
+}

@@ -1,0 +1,10 @@
+query getAdmin($id: ID) {
+  getAdmin(input: { id: $id }) {
+    id
+    email
+    firstName
+    lastName
+    roleIds 
+    twitterHandle
+  }
+}

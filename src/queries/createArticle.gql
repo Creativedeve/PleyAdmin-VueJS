@@ -1,0 +1,43 @@
+mutation createArticle(
+                       $title: String!, 
+                       $body: String!, 
+                       $teaser: String!, 
+                       $priority: ArticlePriority!
+                       $status: ArticleStatus
+                       $publishedAt: Timestamp
+                       $image: ImageInput!
+                       $playerMentions: [PlayerMentionInput]
+                       $teamMentions: [TeamMentionInput]
+                      ) {
+  createArticle(input: { 
+    localeTitle: { en: $title } 
+    localeTeaser: { en: $teaser }
+    localeBody: { en: $body }
+    priority: $priority
+    status: $status
+    publishedAt: $publishedAt
+    image: $image
+    playerMentions: $playerMentions
+    teamMentions: $teamMentions
+  }) {
+    article {
+      id
+      title
+      teaser
+      body
+      priority
+      status
+      playerMentions {
+        id
+        name
+      }
+      teamMentions {
+        id
+        name
+      }
+      image {
+        publicId
+      }
+    }
+  }
+}

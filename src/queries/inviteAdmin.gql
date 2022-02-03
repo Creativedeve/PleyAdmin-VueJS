@@ -1,0 +1,15 @@
+mutation inviteAdmin($email: EmailAddress!, $firstName: String!, $lastName: String!, $twitterHandle: String, $roleIds: [ID!]!) {
+  inviteAdmin(input: { 
+    email: $email
+    firstName: $firstName
+    lastName: $lastName
+    roleIds: $roleIds
+    twitterHandle: $twitterHandle
+  }) {
+    user {
+      id
+      firstName
+      lastName
+    }
+  }
+}

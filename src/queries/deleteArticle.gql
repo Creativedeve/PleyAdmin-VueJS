@@ -1,0 +1,5 @@
+mutation deleteArticle($id: ID!) {
+  deleteArticle(input: { id: $id }) {
+    success
+  }
+}

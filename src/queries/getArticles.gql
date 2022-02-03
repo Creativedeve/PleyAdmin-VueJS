@@ -1,0 +1,19 @@
+query getArticles($pagination: ArticlePaginationInput) {
+  getArticles(input: {
+    pagination: $pagination
+  }) {
+    paginationInfo {
+      hasMore
+      cursor
+    }
+    articles {
+      id
+      title
+      status
+      priority
+      publishedAt
+      slug
+      previewToken
+    }
+  }
+}
